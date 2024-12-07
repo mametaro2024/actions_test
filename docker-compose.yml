@@ -1,0 +1,10 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/go/src/app
+    ports:
+      - '8000:8000'
+    tty: true
